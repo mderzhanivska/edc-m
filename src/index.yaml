@@ -1,0 +1,5 @@
+ProjectTitle: edc-m
+
+PageList:
+- file: page.html
+  ready: 50
