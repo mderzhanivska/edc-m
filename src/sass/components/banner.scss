@@ -1,4 +1,95 @@
 .banner {
+    padding-top: 125px;
+    padding-bottom: 118px;
     background-image: url("../img/banner.png");
     text-align: center;
+    &__title {
+        color: $white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+    }
+}
+.appointment {
+    padding-top: 85px;
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+        padding-left: 18px;
+        &:first-child {
+            padding-bottom: 57px;
+            padding-left: 16px;
+        }
+    }
+}
+.form {
+    &__item {
+        margin: 0 5px;
+        width: 22.9%;
+        height: 45px;
+        border-radius: 5px;
+        background-color: $white;
+        .info {
+            &__textfield {
+                line-height: 45px;
+                padding: 0 16px;
+                width: 100%;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: 400;
+                color: $grey;
+                font-family: 'Roboto', sans-serif;
+                &::placeholder {
+                    color: $grey;
+                }
+
+            }
+        }
+    }
+    &__btn {
+        border-radius: 5px;
+        border: 1px solid #1f96bb;
+        background-color: #ff8e41;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        color: $white;
+        width: 29%;
+        height: 70px;
+    }
+}
+.select {
+    position: relative;
+    width: 100%;
+    &__title {
+        position: absolute;
+        top: -25px;
+        left: 20px;
+        color: $grey-blue;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__specs,
+    &__service,
+    &__date,
+    &__time {
+        width: 100%;
+        height: 45px;
+        border-radius: 5px;
+        border: none;
+        padding-left: 15px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        option {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+            outline: none;
+            border: none;
+        }
+    }
 }
