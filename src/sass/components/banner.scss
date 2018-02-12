@@ -70,6 +70,11 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
+        @media #{$tablet} {
+            top: -23px;
+            left: 11px;
+            font-size: 11px;
+        }
     }
     &__specs,
     &__service,

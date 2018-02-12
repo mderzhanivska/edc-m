@@ -215,6 +215,11 @@
     border-radius: 5px;
     padding-bottom: 30px;
     padding-top: 60px;
+    @media #{$tablet} {
+        margin-top: 30px;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
     &__title {
         font-family: 'Roboto Condensed', sans-serif;
         font-size: 30px;
@@ -223,6 +228,10 @@
         text-transform: uppercase;
         letter-spacing: -3px;
         padding-bottom: 18px;
+        @media #{$tablet} {
+            font-size: 27px;
+            letter-spacing: -1px;
+        }
     }
     &__places {
         padding-top: 30px;
@@ -237,6 +246,9 @@
         font-weight: 700;
         line-height: 21px;
         text-transform: uppercase;
+        @media #{$tablet} {
+            
+        }
     }
     &__desc {
         padding-top: 5px;
@@ -252,6 +264,9 @@
         font-size: 16px;
         font-weight: 700;
         line-height: 21px;
+        @media #{$tablet} {
+            padding-top: 45px;
+        }
     }
     &__link {
         padding-top: 10px;

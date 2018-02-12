@@ -10,3 +10,12 @@ $lighter-blue: #e6f3f7;
 $green: #4fb427;
 $orange: #ff8e41;
 $greyer: #e4ebed;
+
+//media
+
+$mobile: 'screen and (max-width: 480px)';
+$phone: 'screen and (max-width: 767px)';
+$tablet: 'screen and (max-width: 991px)';
+$desktop: 'screen and (max-width: 1199px)';
+$large: 'screen and (max-width: 1599px)';
+$fullHD: 'screen and (max-width: 1920px)';

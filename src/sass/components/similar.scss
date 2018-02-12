@@ -15,6 +15,9 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 22px;
+    @media #{$desktop} {
+        width: 100%;
+    }
 }
 .preview {
     margin-right: 27px;
