@@ -1,0 +1,73 @@
+.similar {
+    padding-top: 22px;
+    .container {
+        padding: 0 15px;
+    }
+}
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+.doctors {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 22px;
+}
+.preview {
+    margin-right: 27px;
+    margin-bottom: 30px;
+    width: 234px;
+    padding-left: 13px;
+    padding-top: 20px;
+    padding-bottom: 32px;
+    position: relative;
+    background-color: $light-grey;
+    border: 1px solid $white;
+    &:hover {
+        border-color: $blue;
+    }
+    &:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 6px;
+        background-color: $blue;
+        top: 0;
+        left: 0;
+    }
+    &__visual {
+        display: flex;
+    }
+    &__img {
+        display: inline-block;
+    }
+    &__tags {
+        padding-top: 17px;
+        padding-left: 12px;
+        .tag {
+            display: inline-block;
+            margin-right: 7px;
+            margin-bottom: 8px;
+            color: $lighter-black;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 5px;
+            background-color: #c4ebf6;
+            padding: 3px 12px;
+        }
+    }
+    &__description {
+        padding-top: 20px;
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    &__text {
+        font-size: 13px;
+        font-weight: 400;
+    }
+}
