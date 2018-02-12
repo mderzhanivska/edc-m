@@ -12,22 +12,35 @@
           <div class="order__item">
             <div class="order__select sel">
               <span class="sel__title">Ваш город</span>
-              <select name="specs"  class="sel__specs">
-                <option value="">Санкт-Петербург</option>
-                <option value="">Санкт-Петербург</option>
-                <option value="">Санкт-Петербург</option>
-              </select>
+              <div class="dropdown">
+                <div class="select">
+                  <span>Санкт-Петербург</span>
+                  <i class="fa fa-chevron-left"></i>
+                </div>
+                <input type="hidden" name="city">
+                <ul class="dropdown-menu">
+                  <li id="city1">Санкт-Петербург</li>
+                  <li id="city2">Санкт-Петербург</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="order__item">
             <div class="order__select sel">
               <span class="sel__title">Услуга</span>
-              <select name="service" class="sel__service">
-                <option value="">МРТ головного мозга</option>
-                <option value="">МРТ гипофиза</option>
-                <option value="">МРТ глазных орбит</option>
-                <option value="">МРТ пазух носа</option>
-              </select>
+              <div class="dropdown">
+                <div class="select">
+                  <span>МРТ головного мозга</span>
+                  <i class="fa fa-chevron-left"></i>
+                </div>
+                <input type="hidden" name="city">
+                <ul class="dropdown-menu">
+                  <li id="city1">МРТ головного мозга</li>
+                  <li id="city2">МРТ гипофиза</li>
+                  <li id="city3">МРТ глазных орбит</li>
+                  <li id="city4">МРТ пазух носа</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

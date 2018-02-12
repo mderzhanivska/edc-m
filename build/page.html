@@ -22,38 +22,45 @@
               <div class="appointment__row form">
                 <div class="form__item info"> <input type="text" class="info__textfield" placeholder="Имя"> </div>
                 <div class="form__item info"> <input type="text" class="info__textfield" placeholder="Телефон"> </div>
-                <div class="form__item">
-                  <div class="form__select select"> <span class="select__title">Выберите специализацию</span> <select name="specs" class="select__specs">
-                <option value="">МРТ</option>
-                <option value="">МРТ</option>
-                <option value="">МРТ</option>
-              </select> </div>
+                <div class="form__item"> <span class="select__title">Выберите специализацию</span>
+                  <div class="dropdown">
+                    <div class="select"> <span>МРТ</span> <i class="fa fa-chevron-left"></i> </div> <input type="hidden" name="spec">
+                    <ul class="dropdown-menu">
+                      <li id="spec1">МРТ</li>
+                      <li id="spec2">МРТ</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="form__item">
-                  <div class="form__select select"> <span class="select__title">Выберите услугу</span> <select name="service" class="select__service">
-              <option value="">МРТ головного мозга</option>
-              <option value="">МРТ гипофиза</option>
-              <option value="">МРТ глазных орбит</option>
-              <option value="">МРТ пазух носа</option>
-            </select> </div>
+                <div class="form__item"> <span class="select__title">Выберите услугу</span>
+                  <div class="dropdown">
+                    <div class="select"> <span>МРТ головного мозга</span> <i class="fa fa-chevron-left"></i> </div> <input type="hidden" name="service">
+                    <ul class="dropdown-menu">
+                      <li id="serv1">МРТ головного мозга</li>
+                      <li id="serv2">МРТ гипофиза</li>
+                      <li id="serv3">МРТ глазных орбит</li>
+                      <li id="serv4">МРТ пазух носа</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="appointment__row form">
-                <div class="form__item">
-                  <div class="form__select select"> <span class="select__title">Выберите дату</span> <select name="service" class="select__date">
-                <option value="">дд.мм</option>
-                <option value="">дд.мм</option>
-                <option value="">дд.мм</option>
-                <option value="">дд.мм</option>
-              </select> </div>
+                <div class="form__item"> <span class="select__title">Выберите дату</span>
+                  <div class="dropdown">
+                    <div class="select"> <span class="date">дд.мм</span> <i class="fa fa-chevron-left"></i> </div> <input type="hidden" name="date">
+                    <ul class="dropdown-menu">
+                      <li id="date1">11.02</li>
+                      <li id="date2">12.02</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="form__item">
-                  <div class="form__select select"> <span class="select__title">Выберите время</span> <select name="service" class="select__time">
-                <option value="">12 : 30</option>
-                <option value="">12 : 30</option>
-                <option value="">12 : 30</option>
-                <option value="">12 : 30</option>
-              </select> </div>
+                <div class="form__item"> <span class="select__title">Выберите время</span>
+                  <div class="dropdown">
+                    <div class="select"> <span>12 : 30</span> <i class="fa fa-chevron-left"></i> </div> <input type="hidden" name="time">
+                    <ul class="dropdown-menu">
+                      <li id="time1">12 : 30</li>
+                      <li id="time2">13 : 30</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="appointment__row form"> <button class="form__btn">Записаться</button> </div>
@@ -200,19 +207,28 @@
                 <div class="order__item info"> <input type="text" class="info__textfield" placeholder="Имя"> </div>
                 <div class="order__item info"> <input type="text" class="info__textfield" placeholder="Телефон"> </div>
                 <div class="order__item">
-                  <div class="order__select sel"> <span class="sel__title">Ваш город</span> <select name="specs" class="sel__specs">
-                <option value="">Санкт-Петербург</option>
-                <option value="">Санкт-Петербург</option>
-                <option value="">Санкт-Петербург</option>
-              </select> </div>
+                  <div class="order__select sel"> <span class="sel__title">Ваш город</span>
+                    <div class="dropdown">
+                      <div class="select"> <span>Санкт-Петербург</span> <i class="fa fa-chevron-left"></i> </div> <input type="hidden" name="city">
+                      <ul class="dropdown-menu">
+                        <li id="city1">Санкт-Петербург</li>
+                        <li id="city2">Санкт-Петербург</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <div class="order__item">
-                  <div class="order__select sel"> <span class="sel__title">Услуга</span> <select name="service" class="sel__service">
-                <option value="">МРТ головного мозга</option>
-                <option value="">МРТ гипофиза</option>
-                <option value="">МРТ глазных орбит</option>
-                <option value="">МРТ пазух носа</option>
-              </select> </div>
+                  <div class="order__select sel"> <span class="sel__title">Услуга</span>
+                    <div class="dropdown">
+                      <div class="select"> <span>МРТ головного мозга</span> <i class="fa fa-chevron-left"></i> </div> <input type="hidden" name="city">
+                      <ul class="dropdown-menu">
+                        <li id="city1">МРТ головного мозга</li>
+                        <li id="city2">МРТ гипофиза</li>
+                        <li id="city3">МРТ глазных орбит</li>
+                        <li id="city4">МРТ пазух носа</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="app__row order"> <button class="order__btn">Показать лучшие условия</button> </div>
