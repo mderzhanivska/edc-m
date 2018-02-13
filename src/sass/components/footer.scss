@@ -1,18 +1,33 @@
 footer {
     padding-top: 42px;
     padding-bottom: 87px;
+    @media #{$mobile} {
+        padding-bottom: 26px;
+    }
 }
 .links {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    @media #{$mobile} {
+        flex-wrap: wrap;
+    }
 }
 .list {
+    @media #{$mobile} {
+        padding-bottom: 20px;
+    }
     &__title {
         font-size: 21px;
         font-weight: 400;
         line-height: 24px;
         padding-bottom: 16px;
+        @media #{$tablet} {
+            font-size: 19px;
+        }
+        @media #{$mobile} {
+            font-size: 17px;
+        }
     }
     &__link {
         display: block;
@@ -22,6 +37,12 @@ footer {
         font-weight: 400;
         line-height: 25px;
         text-decoration: none;
+        @media #{$mobile} {
+            font-size: 11px;
+        }
+        @media #{$mobile} {
+            font-size: 12px;
+        }
         &:hover {
             text-decoration: underline;
         }

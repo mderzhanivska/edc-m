@@ -10,6 +10,9 @@
 }
 .main {
     width: 71%;
+    @media #{$tablet} {
+        width: 100%;
+    }
     &__navigation {
         .breadcrumbs {
             &__item {
@@ -54,6 +57,9 @@
     &__describtion {
         padding-top: 20px;
         display: flex;
+        @media #{$mobile} {
+            flex-direction: column;
+        }
     }
     &__study {
         padding-top: 24px;
@@ -68,6 +74,9 @@
         font-weight: 700;
         line-height: 24.01px;
     }
+    &__img {
+        text-align: center;
+    }
     &__address {
         background-color: $lighter-blue;
         margin-top: 11px;
@@ -79,16 +88,22 @@
         padding-right: 25px;
         display: flex;
         justify-content: space-between;
+        @media #{$mobile} {
+            padding: 8px 12px;
+            flex-direction: column;
+        }
         .address {
             &__title {
                 font-size: 21px;
                 font-weight: 300;
                 line-height: 35px;
-                color: $blue
+                color: $blue;
+                @media #{$mobile} {
+                    font-size: 15px;
+                }
             }
             &__link {
                 padding-top: 4px;
-                padding-left: 23px;
                 display: block;
                 font-family: 'Helvetica Neue', sans-serif;
                 font-size: 14px;
@@ -99,13 +114,21 @@
                 &:hover {
                     text-decoration: underline;
                 }
+                @media #{$mobile} {
+                    font-size: 12px;
+                }
+                img {
+                    width: 8px;
+                    height: 9px;
+                    margin-right: 15px;
+                }
             }
         }
         .contacts {
             display: flex;
             flex-direction: column;
             &__btn {
-                margin-top: 16px;
+                margin-top: 12px;
                 line-height: 30px;
                 border-radius: 5px;
                 border: 1px solid #e1762e;
@@ -113,6 +136,9 @@
                 font-size: 18px;
                 font-weight: 700;
                 color: $white;
+                @media #{$mobile} {
+                    font-size: 12px;
+                }
                 &:hover {
                     color: $orange;
                     background-color: $white;
@@ -127,12 +153,15 @@
                 line-height: 17px;
                 color: #000;
                 text-decoration: none;
+                @media #{$mobile} {
+                    font-size: 10px;
+                }
                 &:hover {
                     color: $blue;
                 }
                 span {
                     color: #999999;
-                    font-size: 12px;
+                    font-size: 9px;
                 }
 
             }
@@ -141,6 +170,9 @@
 }
 .desc {
     padding-left: 27px;
+    @media #{$mobile} {
+        padding-left: 0;
+    }
     &__title {
         display: inline-block;
         font-size: 18px;
@@ -153,6 +185,10 @@
         font-weight: 500;
         line-height: 24.01px;
         color: $deep-grey;
+        @media #{$mobile} {
+            flex-direction: column;
+            display: block;
+        }
     }
     &__tags {
         padding-top: 9px;
@@ -164,6 +200,9 @@
             border-radius: 5px;
             background-color: #c4ebf6;
             padding: 3px 10px;
+            @media #{$mobile} {
+                margin-right: 0;
+            }
         }
     }
     &__text {
@@ -193,9 +232,12 @@
         }
     }
 }
-.aside {
+aside {
     width: 30%;
     padding-left: 42px;
+    @media #{$tablet} {
+        display: none;
+    }
 }
 .pages {
     font-family: 'Helvetica Neue', sans-serif;

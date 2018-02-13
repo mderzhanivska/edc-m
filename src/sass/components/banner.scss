@@ -3,16 +3,24 @@
     padding-bottom: 118px;
     background-image: url("../img/banner.png");
     text-align: center;
+    @media #{$tablet} {
+        padding-top: 60px;
+    }
     &__title {
         color: $white;
         font-family: 'Roboto', sans-serif;
         font-size: 40px;
         font-weight: 400;
+        @media #{$mobile} {
+            font-size: 30px;
+        }
     }
 }
 .appointment {
     padding-top: 85px;
-
+    @media #{$mobile} {
+        padding-top: 60px;
+    }
     &__row {
         display: flex;
         justify-content: center;
@@ -21,6 +29,24 @@
         &:first-child {
             padding-bottom: 57px;
             padding-left: 16px;
+            @media #{$tablet} {
+                padding-left: 0;
+                padding-bottom: 0;
+            }
+            @media #{$mobile} {
+                padding-left: 0;
+                padding-bottom: 0;
+            }
+        }
+        @media #{$tablet} {
+            flex-wrap: wrap;
+            padding-left: 0;
+            padding-bottom: 0;
+        }
+        @media #{$mobile} {
+            display: block;
+            padding-left: 0;
+            padding-bottom: 0;
         }
     }
 }
@@ -32,6 +58,14 @@
         height: 45px;
         border-radius: 5px;
         background-color: $white;
+        @media #{$tablet} {
+            margin: 13px 5px;
+            width: 46%;
+        }
+        @media #{$mobile} {
+            width: 100%;
+            margin: 25px 0;
+        }
         .info {
             &__textfield {
                 line-height: 45px;
@@ -45,13 +79,15 @@
                 &::placeholder {
                     color: $grey;
                 }
-                &:focus {
+                @media #{$tablet} {
+                    font-size: 12px;
                 }
 
             }
         }
     }
     &__btn {
+        margin-left: -15px;
         border-radius: 5px;
         background-color: #ff8e41;
         font-size: 20px;
@@ -64,6 +100,12 @@
             color: $orange;
             background-color: $white;
             border: 1px solid $orange;
+        }
+        @media #{$tablet} {
+            width: 70%;
+        }
+        @media #{$mobile} {
+            width: 70%;
         }
     }
 }
@@ -121,16 +163,22 @@
     font-weight: 400;
     line-height: 24px;
     height: 100%;
-    text-align: left
+    text-align: left;
+    @media #{$tablet} {
+        font-size: 12px;
+    }
+
 }
 .dropdown .select {
     cursor: pointer;
     display: block;
-    padding: 10px
+    padding: 10px;
+    position: relative;
 }
-.dropdown .select > i {
-    font-size: 13px;
-    color: #000;
+.dropdown .select > img {
+    position: absolute;
+    top: 20px;
+    right: 8px;
     cursor: pointer;
     transition: all .3s ease-in-out;
     float: right;
@@ -148,8 +196,8 @@
     border-radius: 5px 5px 0 0;
     background-color: #f8f8f8
 }
-.dropdown.active .select > i {
-    transform: rotate(-90deg)
+.dropdown.active .select > img {
+    transform: rotate(180deg)
 }
 .dropdown .dropdown-menu {
     position: absolute;
@@ -167,6 +215,9 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    @media #{$tablet} {
+        font-size: 12px;
+    }
 }
 .dropdown .dropdown-menu li {
     padding: 10px;

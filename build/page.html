@@ -24,7 +24,7 @@
                 <div class="form__item info"> <input type="text" class="info__textfield" placeholder="Телефон"> </div>
                 <div class="form__item"> <span class="select__title">Выберите специализацию</span>
                   <div class="dropdown">
-                    <div class="select"> <span>МРТ</span> <i class="fa fa-chevron-left"></i> </div> <input type="hidden" name="spec">
+                    <div class="select"> <span>МРТ</span> <img src="../img/select-arrow.png" alt=""> </div> <input type="hidden" name="spec">
                     <ul class="dropdown-menu">
                       <li id="spec1">МРТ</li>
                       <li id="spec2">МРТ</li>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="form__item"> <span class="select__title">Выберите услугу</span>
                   <div class="dropdown">
-                    <div class="select"> <span>МРТ головного мозга</span> <i class="fa fa-chevron-left"></i> </div> <input type="hidden" name="service">
+                    <div class="select"> <span>МРТ головного мозга</span> <img src="../img/select-arrow.png" alt=""> </div> <input type="hidden" name="service">
                     <ul class="dropdown-menu">
                       <li id="serv1">МРТ головного мозга</li>
                       <li id="serv2">МРТ гипофиза</li>
@@ -46,7 +46,7 @@
               <div class="appointment__row form">
                 <div class="form__item"> <span class="select__title">Выберите дату</span>
                   <div class="dropdown">
-                    <div class="select"> <span class="date">дд.мм</span> <i class="fa fa-chevron-left"></i> </div> <input type="hidden" name="date">
+                    <div class="select"> <span class="date">дд.мм</span> <img src="../img/select-arrow.png" alt=""> </div> <input type="hidden" name="date">
                     <ul class="dropdown-menu">
                       <li id="date1">11.02</li>
                       <li id="date2">12.02</li>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="form__item"> <span class="select__title">Выберите время</span>
                   <div class="dropdown">
-                    <div class="select"> <span>12 : 30</span> <i class="fa fa-chevron-left"></i> </div> <input type="hidden" name="time">
+                    <div class="select"> <span>12 : 30</span> <img src="../img/select-arrow.png" alt=""> </div> <input type="hidden" name="time">
                     <ul class="dropdown-menu">
                       <li id="time1">12 : 30</li>
                       <li id="time2">13 : 30</li>
@@ -102,18 +102,20 @@
                 <h3 class="spec__title">Специалист принимает в центрах:</h3>
                 <div class="spec__address ">
                   <div class="address">
-                    <h2 class="address__title">МРТ24 на Павелецкой</h2> <a href="" class="address__link">Павелецкая, Маяковская</a> <a href="" class="address__link">Павелецкая набережная, 7</a> </div>
-                  <div class="contacts"> <button class="contacts__btn">Записаться</button> <a href="tel:+7 (812) 385-77-56" class="contacts__number"><span>или по телефону</span> <br>+7 (812) 385-77-56</a> </div>
+                    <h2 class="address__title">МРТ24 на Павелецкой</h2> <a href="" class="address__link"><img src="../img/metro.jpg" alt="">Павелецкая, Маяковская</a> <a href="" class="address__link"><img src="../img/pin.png" alt="">Павелецкая набережная, 7</a> </div>
+                  <div class="contacts">
+                  <button class="contacts__btn">Записаться</button> <a href="tel:+7 (812) 385-77-56" class="contacts__number"><span>или по телефону</span> <br>+7 (812) 385-77-56</a> </div>
                 </div>
                 <div class="spec__address ">
                   <div class="address">
-                    <h2 class="address__title">МРТ24 на Павелецкой</h2> <a href="" class="address__link">Павелецкая, Маяковская</a> <a href="" class="address__link">Павелецкая набережная, 7</a> </div>
-                  <div class="contacts"> <button class="contacts__btn">Записаться</button> <a href="tel:+7 (812) 385-77-56" class="contacts__number"><span>или по телефону</span> <br> +7 (812) 385-77-56</a> </div>
+                    <h2 class="address__title">МРТ24 на Павелецкой</h2> <a href="" class="address__link"><img src="../img/metro.jpg" alt="">Павелецкая, Маяковская</a> <a href="" class="address__link"><img src="../img/pin.png" alt="">Павелецкая набережная, 7</a> </div>
+                  <div class="contacts">
+                  <button class="contacts__btn">Записаться</button> <a href="tel:+7 (812) 385-77-56" class="contacts__number"><span>или по телефону</span> <br> +7 (812) 385-77-56</a> </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="aside">
+          <aside>
             <div class="aside__nav pages">
               <h3 class="pages__title">Навигация по странице:</h3>
               <ul class="pages__list">
@@ -123,7 +125,7 @@
             </div>
             <div class="aside__call-now offer">
               <h2 class="offer__title">Осталось</h2> <span class="offer__places">5</span> <span class="offer__desc">мест по специальной цене</span> <span class="offer__call">Звоните сейчас</span> <a href="tel:+7 (812) 385-77-56" class="offer__link">+7 (812) 385-77-56</a> </div>
-          </div>
+          </aside>
         </div>
       </section>
       <section class="similar">
@@ -132,7 +134,8 @@
           <div class="doctors">
             <div class="doctors__column">
               <div class="preview">
-                <div class="preview__visual"> <img src="../img/013e39.png" alt="" class="preview__img">
+                <div class="preview__visual">
+                  <div class="preview__img"> <img src="../img/013e39.png" alt=""> </div>
                   <div class="preview__tags"> <span class="tag">Хирург</span> <span class="tag">Травматолог</span> <span class="tag">Ортопед</span> </div>
                 </div>
                 <div class="preview__description">
@@ -143,7 +146,8 @@
             </div>
             <div class="doctors__column">
               <div class="preview">
-                <div class="preview__visual"> <img src="../img/013e39.png" alt="" class="preview__img">
+                <div class="preview__visual">
+                  <div class="preview__img"> <img src="../img/013e39.png" alt=""> </div>
                   <div class="preview__tags"> <span class="tag">Хирург</span> <span class="tag">Травматолог</span> <span class="tag">Ортопед</span> </div>
                 </div>
                 <div class="preview__description">
@@ -154,7 +158,8 @@
             </div>
             <div class="doctors__column">
               <div class="preview">
-                <div class="preview__visual"> <img src="../img/013e39.png" alt="" class="preview__img">
+                <div class="preview__visual">
+                  <div class="preview__img"> <img src="../img/013e39.png" alt=""> </div>
                   <div class="preview__tags"> <span class="tag">Хирург</span> <span class="tag">Травматолог</span> <span class="tag">Ортопед</span> </div>
                 </div>
                 <div class="preview__description">
@@ -165,7 +170,8 @@
             </div>
             <div class="doctors__column">
               <div class="preview">
-                <div class="preview__visual"> <img src="../img/013e39.png" alt="" class="preview__img">
+                <div class="preview__visual">
+                  <div class="preview__img"> <img src="../img/013e39.png" alt=""> </div>
                   <div class="preview__tags"> <span class="tag">Травматолог</span> </div>
                 </div>
                 <div class="preview__description">
@@ -176,7 +182,8 @@
             </div>
             <div class="doctors__column">
               <div class="preview">
-                <div class="preview__visual"> <img src="../img/013e39.png" alt="" class="preview__img">
+                <div class="preview__visual">
+                  <div class="preview__img"> <img src="../img/013e39.png" alt=""> </div>
                   <div class="preview__tags"> <span class="tag">Хирург</span> <span class="tag">Травматолог</span> </div>
                 </div>
                 <div class="preview__description">
@@ -187,7 +194,8 @@
             </div>
             <div class="doctors__column">
               <div class="preview">
-                <div class="preview__visual"> <img src="../img/013e39.png" alt="" class="preview__img">
+                <div class="preview__visual">
+                  <div class="preview__img"> <img src="../img/013e39.png" alt=""> </div>
                   <div class="preview__tags"> <span class="tag">Хирург</span> <span class="tag">Травматолог</span> <span class="tag">Ортопед</span> </div>
                 </div>
                 <div class="preview__description">
@@ -209,7 +217,7 @@
                 <div class="order__item">
                   <div class="order__select sel"> <span class="sel__title">Ваш город</span>
                     <div class="dropdown">
-                      <div class="select"> <span>Санкт-Петербург</span> <i class="fa fa-chevron-left"></i> </div> <input type="hidden" name="city">
+                      <div class="select"> <span>Санкт-Петербург</span> <img src="../img/select-arrow.png" alt=""> </div> <input type="hidden" name="city">
                       <ul class="dropdown-menu">
                         <li id="city1">Санкт-Петербург</li>
                         <li id="city2">Санкт-Петербург</li>
@@ -220,7 +228,7 @@
                 <div class="order__item">
                   <div class="order__select sel"> <span class="sel__title">Услуга</span>
                     <div class="dropdown">
-                      <div class="select"> <span>МРТ головного мозга</span> <i class="fa fa-chevron-left"></i> </div> <input type="hidden" name="city">
+                      <div class="select"> <span>МРТ головного мозга</span> <img src="../img/select-arrow.png" alt=""> </div> <input type="hidden" name="city">
                       <ul class="dropdown-menu">
                         <li id="city1">МРТ головного мозга</li>
                         <li id="city2">МРТ гипофиза</li>

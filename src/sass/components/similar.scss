@@ -1,5 +1,5 @@
 .similar {
-    padding-top: 22px;
+    padding-top: 27px;
     padding-bottom: 55px;
     .container {
         padding: 0 15px;
@@ -19,20 +19,41 @@
         width: 100%;
     }
     &__column {
-        width: 33.3%;
-        padding: 0 10px
+        margin-right: 27px;
+        width: 29%;
+        @media #{$tablet} {
+            margin-right: 0;
+        }
+        @media #{$phone} {
+            width: 50%;
+            padding: 0;
+            margin-right: 0;
+        }
+        @media #{$mobile} {
+            width: 100%;
+            padding: 0;
+        }
     }
 }
 .preview {
     margin-right: 27px;
-    margin-bottom: 30px;
-    width: 234px;
+    margin-bottom: 24px;
+    width: 100%;
     padding-left: 13px;
     padding-top: 20px;
     padding-bottom: 32px;
     position: relative;
     background-color: $light-grey;
     border: 1px solid $white;
+    @media #{$tablet} {
+        min-height: 327px;
+        margin-right: 0;
+    }
+    @media #{$mobile} {
+        min-height: 365px;
+        padding-left: 4px;
+        margin-right: 0;
+    }
     &:hover {
         border-color: $blue;
     }
@@ -47,13 +68,30 @@
     }
     &__visual {
         display: flex;
+        @media #{$tablet} {
+            flex-direction: column;
+        }
+        @media #{$mobile} {
+            flex-direction: column;
+        }
     }
     &__img {
         display: inline-block;
+        @media #{$phone} {
+            text-align: center;
+        }
+        @media #{$mobile} {
+            img {
+                width: 100px;
+            }
+        }
     }
     &__tags {
         padding-top: 17px;
         padding-left: 12px;
+        @media #{$mobile} {
+            padding-left: 6px;
+        }
         .tag {
             display: inline-block;
             margin-right: 7px;
@@ -64,18 +102,38 @@
             border-radius: 5px;
             background-color: #c4ebf6;
             padding: 3px 12px;
+            @media #{$phone} {
+                font-size: 11px;
+                padding: 3px 5px;
+            }
+            @media #{$mobile} {
+                font-size: 14px;
+            }
         }
     }
     &__description {
         padding-top: 20px;
+        @media #{$phone} {
+            padding-top: 0;
+        }
+        @media #{$mobile} {
+            padding-left: 5px;
+        }
     }
     &__title {
         font-size: 14px;
         font-weight: 700;
         line-height: 24px;
+        @media #{$mobile} {
+            font-size: 17px;
+        }
     }
     &__text {
         font-size: 13px;
         font-weight: 400;
+        @media #{$mobile} {
+            padding-top: 5px;
+            font-size: 16px;
+        }
     }
 }
