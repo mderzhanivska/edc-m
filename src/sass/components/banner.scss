@@ -11,8 +11,11 @@
         font-family: 'Roboto', sans-serif;
         font-size: 40px;
         font-weight: 400;
+        @media #{$tablet} {
+            font-size: 35px;
+        }
         @media #{$mobile} {
-            font-size: 30px;
+            font-size: 20px;
         }
     }
 }

@@ -9,11 +9,15 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    @media #{$mobile} {
+    @media #{$tablet} {
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 .list {
+    @media #{$tablet} {
+        padding-bottom: 15px;
+    }
     @media #{$mobile} {
         padding-bottom: 20px;
     }

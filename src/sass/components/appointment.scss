@@ -75,6 +75,9 @@
             width: 70%;
         }
         @media #{$mobile} {
+            padding: 0 10px;
+        }
+        @media #{$mobile} {
             width: 70%;
         }
     }
